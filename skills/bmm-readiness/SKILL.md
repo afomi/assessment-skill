@@ -207,7 +207,84 @@ If the user is preparing for a formal GBA assessment, walk them through the proc
 
 ## Output Format
 
-When generating the scorecard or recommendations, use clean markdown tables.
-Keep recommendations actionable and specific.
-When referencing BMM elements or levels, use the official terminology.
-If the user's solution has critical gaps, lead with those — do not bury bad news under praise.
+All assessment output must be written to a file for sharing and version control.
+
+### File Convention
+
+Write the assessment to a file named `BMM_ASSESSMENT_FOR_[SOLUTION]_[YYYY_MM_DD].md` in the current working directory.
+Use the solution name in UPPER_SNAKE_CASE (e.g., `BMM_ASSESSMENT_FOR_CIVIL_REGISTRY_2026_03_28.md`).
+Each assessment is its own file — one per solution per date.
+This makes assessments easy to diff across time and share individually.
+
+### File Structure
+
+```markdown
+# BMM Readiness Assessment
+
+**Solution**: [name]
+**Domain**: [domain]
+**Assessed by**: BMM Readiness Skill (informal — not a GBA assessment)
+**Date**: [YYYY-MM-DD]
+**Stakeholder**: [role]
+**Goal**: [what they're preparing for]
+
+## Integrity Check
+
+[Pass/Fail on Decentralization and Distribution, with rationale]
+
+## Maturity Scorecard
+
+| Element | Level | Evidence | Gap to Next | Priority |
+|---------|-------|----------|-------------|----------|
+| Distribution | ... | ... | ... | ... |
+| Governance | ... | ... | ... | ... |
+| ... | ... | ... | ... | ... |
+
+**Overall Rating**: [lowest element score]
+
+## Top Risks
+
+1. ...
+2. ...
+3. ...
+
+## Recommended Next Steps
+
+1. ...
+2. ...
+3. ...
+
+## Assessment Readiness
+
+[Ready / Not ready for formal GBA assessment, with specifics]
+
+## Formal Assessment Checklist
+
+- [ ] Solution Point of Contact (SPoC) identified
+- [ ] Evidence collected for all elements at target level
+- [ ] Internal self-assessment completed
+- [ ] BAP identified, no consulting conflicts
+- [ ] Budget allocated (team time, BAP fees, GBA review fee)
+- [ ] Target date set (with 30-day registration lead time)
+
+---
+
+## Changelog
+
+| Date | Change |
+|------|--------|
+| YYYY-MM-DD | Initial assessment |
+```
+
+### Writing Rules
+
+- Write the file progressively as you complete each phase — do not wait until the end.
+- After Phase 3 (Integrity Check), write the header and integrity check section.
+- After each element in Phase 4, update the scorecard table.
+- After Phase 5, write the risks, next steps, and assessment readiness sections.
+- After Phase 6, write the formal assessment checklist.
+- When generating the scorecard or recommendations, use clean markdown tables.
+- Keep recommendations actionable and specific.
+- When referencing BMM elements or levels, use the official terminology.
+- If the user's solution has critical gaps, lead with those — do not bury bad news under praise.
+- Tell the user where the file is after each major write so they can review it.
