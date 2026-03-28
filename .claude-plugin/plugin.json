@@ -1,0 +1,10 @@
+{
+  "name": "gba-bmm",
+  "version": "1.0.0",
+  "description": "GBA Blockchain Maturity Model readiness consultant. Assesses blockchain solutions across 11 elements and 5 maturity levels per the GBA BMM framework. Built for government agencies, solution providers, investors, and acquisition professionals.",
+  "author": {
+    "name": "ACT-IAC Blockchain Working Group"
+  },
+  "homepage": "https://gbaglobal.org/blockchain-maturity-model/",
+  "license": "MIT"
+}
